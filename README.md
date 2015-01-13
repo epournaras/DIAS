@@ -1,6 +1,6 @@
 # DIAS, the Dynamic Intelligent Aggregation Service
 
-This project is the source code that prototypes DIAS as illustrated in the following published paper:
+This project is the source code that prototypes DIAS as illustrated in the following published [paper](http://www.casmodeling.com/content/pdf/2194-3206-1-19.pdf):
 
 >E. Pournaras, M. Warnier and F.M.T. Brazier, _A Generic and Adaptive Aggregation Service for Large-scale Decentralized Networks_, Complex Adaptive Systems Modeling, 1:19, 2013 © SpringerOpen
 
