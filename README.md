@@ -4,7 +4,9 @@ This project is the source code that prototypes DIAS as illustrated in the follo
 
 >E. Pournaras, M. Warnier and F.M.T. Brazier, _A Generic and Adaptive Aggregation Service for Large-scale Decentralized Networks_, Complex Adaptive Systems Modeling, 1:19, 2013 © SpringerOpen
 
-######################################################################################################################
+You can also read about DIAS in Chapter 5 of my [PhD thesis](http://evangelospournaras.com/wordpress/wp-content/uploads/2013/04/Multi-level-Reconfigurable-Self-organization-in-Overlay-Services1.pdf).
+
+>E. Pournaras, _Multi-level Reconfigurable Self-organization in Overlay Services_, PhD Thesis, Delft University of Technology, March 2013
 
 This is a summary of DIAS from the above published paper:
 
