@@ -8,8 +8,6 @@ You can also read about DIAS in Chapter 5 of the following [PhD thesis](http://e
 
 >E. Pournaras, _Multi-level Reconfigurable Self-organization in Overlay Services_, PhD Thesis, Delft University of Technology, March 2013
 
-This is a summary of DIAS from the above published paper:
-
 Purpose
 ---
 
