@@ -8,7 +8,7 @@ Evangelos Pournaras, Martijn Warnier and Frances M.T. Brazier, A Generic and Ada
 
 This is a summary of DIAS from the above published paper:
 
-Purpose
+# Purpose
 
 Purpose: Aggregation functions are used in distributed environments to make system-wide information locally available in the nodes of a network. The computation of different aggregation functions, e.g., SUMMATION, AVERAGE, MAXIMUM etc., in large-scale distributed systems is challenging and crucial for a wide range of applications. This is especially the case when the input values of these functions dynamically change during system runtime. Related approaches of decentralized aggregation are function-dependent, interaction-dependent, assume static values or cannot always tolerate duplicates and continuously changing information.
 
