@@ -2,7 +2,7 @@
 
 This project is the source code that prototypes DIAS as illustrated in the following published paper:
 
->Evangelos Pournaras, Martijn Warnier and Frances M.T. Brazier, _A Generic and Adaptive Aggregation Service for Large-scale >Decentralized Networks_, Complex Adaptive Systems Modeling, 1:19, 2013 © SpringerOpen
+>E. Pournaras, M. Warnier and F.M.T. Brazier, _A Generic and Adaptive Aggregation Service for Large-scale Decentralized Networks_, Complex Adaptive Systems Modeling, 1:19, 2013 © SpringerOpen
 
 ######################################################################################################################
 
