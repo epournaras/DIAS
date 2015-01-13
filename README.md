@@ -1,4 +1,4 @@
-# DIAS - Dynamic Intelligent Aggregation Service
+# DIAS, the Dynamic Intelligent Aggregation Service
 
 This project is the source code that prototypes DIAS as illustrated in the following published paper:
 
