@@ -36,7 +36,7 @@ import protopeer.measurement.MeasurementLoggerListener;
 public class DIASLogReplayer {
 
     private final static String expSeqNum="01";
-    private final static String expID="Experiment "+expSeqNum+"/";
+    private final static String expID="LossExperiment"+expSeqNum+"/";
 
     private LogReplayer replayer;
     private final String coma=",";
@@ -49,7 +49,8 @@ public class DIASLogReplayer {
     }
 
     public static void main(String args[]){
-        DIASLogReplayer replayer=new DIASLogReplayer("peersLog/"+expID, 0, 1000);
+    	System.out.println("Reading from folder "+args[0]);
+        DIASLogReplayer replayer=new DIASLogReplayer(args[0], 0, 1000);
     }
 
     public void loadLogs(String directory, int minLoad, int maxLoad){
@@ -58,8 +59,8 @@ public class DIASLogReplayer {
             File[] listOfFiles = folder.listFiles();
             for (int i = 0; i < listOfFiles.length; i++) {
                 if (listOfFiles[i].isFile()&&!listOfFiles[i].isHidden()) {
-                    MeasurementLog loadedLog=replayer.loadLogFromFile(directory+listOfFiles[i].getName());
-                    System.err.println(loadedLog.toString());
+                    MeasurementLog loadedLog=replayer.loadLogFromFile(directory+"/"+listOfFiles[i].getName());
+                    //System.err.println(loadedLog.toString());
                     MeasurementLog replayedLog=this.getMemorySupportedLog(loadedLog, minLoad, maxLoad);
                     replayer.mergeLog(replayedLog);
                 }

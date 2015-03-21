@@ -28,6 +28,10 @@ import protopeer.NeighborManager;
 import protopeer.Peer;
 import protopeer.PeerFactory;
 import protopeer.SimulatedExperiment;
+import protopeer.network.NetworkInterfaceFactory;
+import protopeer.network.delayloss.DelayLossNetworkInterfaceFactory;
+import protopeer.network.delayloss.DelayLossNetworkModel;
+import protopeer.network.delayloss.LossyUniformDelayModel;
 import protopeer.servers.bootstrap.BootstrapClient;
 import protopeer.servers.bootstrap.BootstrapServer;
 import protopeer.servers.bootstrap.SimpleConnector;
@@ -45,16 +49,16 @@ import enums.ViewPropagationPolicy;
 
 /**
  *
- * @author Evangelos
+ * @author lcb
  */
-public class DIASApplExperiment extends SimulatedExperiment
+public class DIASLossExperiment extends SimulatedExperiment
 {
 
-    private final static String expSeqNum="01";
-    private final static String expID="Experiment"+expSeqNum+"/";
+    private final static String expSeqNum="02";
+    private final static String expID="LossExperiment"+expSeqNum+"/";
 
     //Simulation Parameters
-    private final static int runDuration=300;
+    private final static int runDuration=10;
     private final static int N=500;
 
     //Peer Sampling Service
@@ -113,7 +117,7 @@ public class DIASApplExperiment extends SimulatedExperiment
     public static void main(String[] args) {
         System.out.println(expID+"\n");
         Experiment.initEnvironment();
-        final DIASApplExperiment dias = new DIASApplExperiment();
+        final DIASLossExperiment dias = new DIASLossExperiment();
         dias.init();
         final File folder = new File("peersLog/"+expID);
         folder.mkdirs();
@@ -177,6 +181,17 @@ public class DIASApplExperiment extends SimulatedExperiment
         bfParams.put(BloomFilterParams.SMA_K, sma_k);
         return bfParams;
     }
+    
+    /**
+	 * Returns the default simple network interface factory. Messages passed
+	 * between network interfaces experience zero delay and are never lost.
+	 */
+	@Override
+	public NetworkInterfaceFactory createNetworkInterfaceFactory() {
+		System.out.println("Creating LossyInterface");
+		DelayLossNetworkModel delayLossNetworkModel = new LossyUniformDelayModel(10, 100, 0.001);
+		return new DelayLossNetworkInterfaceFactory(eventScheduler, delayLossNetworkModel);
+	}
 
 
 }

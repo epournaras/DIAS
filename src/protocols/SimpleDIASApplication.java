@@ -239,6 +239,7 @@ public class SimpleDIASApplication extends BasePeerlet implements DIASApplicatio
             this.max=(Double)aggregator.getAggregate(AggregationFunction.MAX);
             this.min=(Double)aggregator.getAggregate(AggregationFunction.MIN);
             this.count=(Double)aggregator.getAggregate(AggregationFunction.COUNT);
+            //System.out.println(this.id+" "+System.currentTimeMillis()+" "+avg+" "+stdev+" "+min+" "+max+" "+count);
         }
     }
 
