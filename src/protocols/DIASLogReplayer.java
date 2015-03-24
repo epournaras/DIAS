@@ -35,22 +35,19 @@ import protopeer.measurement.MeasurementLoggerListener;
  */
 public class DIASLogReplayer {
 
-    private final static String expSeqNum="01";
-    private final static String expID="LossExperiment"+expSeqNum+"/";
-
     private LogReplayer replayer;
     private final String coma=",";
-
+ 
 
     public DIASLogReplayer(String logsDir, int minLoad, int maxLoad){
         this.replayer=new LogReplayer();
         this.loadLogs(logsDir, minLoad, maxLoad);
-        this.replayResults();
     }
 
     public static void main(String args[]){
     	System.out.println("Reading from folder "+args[0]);
         DIASLogReplayer replayer=new DIASLogReplayer(args[0], 0, 1000);
+        replayer.replayResults();
     }
 
     public void loadLogs(String directory, int minLoad, int maxLoad){
@@ -59,7 +56,8 @@ public class DIASLogReplayer {
             File[] listOfFiles = folder.listFiles();
             for (int i = 0; i < listOfFiles.length; i++) {
                 if (listOfFiles[i].isFile()&&!listOfFiles[i].isHidden()) {
-                    MeasurementLog loadedLog=replayer.loadLogFromFile(directory+"/"+listOfFiles[i].getName());
+                	MeasurementLog loadedLog=replayer.loadLogFromFile2(directory+"/"+listOfFiles[i].getName());
+                	//System.err.println(listOfFiles[i]);
                     //System.err.println(loadedLog.toString());
                     MeasurementLog replayedLog=this.getMemorySupportedLog(loadedLog, minLoad, maxLoad);
                     replayer.mergeLog(replayedLog);
@@ -71,10 +69,10 @@ public class DIASLogReplayer {
             }
         }
         catch(IOException io){
-
+        	io.printStackTrace();
         }
         catch(ClassNotFoundException ex){
-
+        	ex.printStackTrace();
         }
     }
 

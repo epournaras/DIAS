@@ -454,7 +454,7 @@ public class SimpleDIASApplication extends BasePeerlet implements DIASApplicatio
     }
 
      /**
-     * Scheduling the measurements for DIAS. The aggregates from DIAS servide
+     * Scheduling the measurements for DIAS. The aggregates from DIAS service
      * are logged in this case.
      */
     private void scheduleMeasurements(){
