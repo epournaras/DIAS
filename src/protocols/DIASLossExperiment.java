@@ -54,11 +54,13 @@ import enums.ViewPropagationPolicy;
 public class DIASLossExperiment extends SimulatedExperiment
 {
 
-    private final static String expSeqNum="02";
-    private final static String expID="LossExperiment"+expSeqNum+"/";
+    private static double LOSSES_FRACTION = 0;
+	private static int MAX_DELAY = 0;
+	private static int MIN_DELAY = 0;
+    private static String expID="LossExperiment/";
 
     //Simulation Parameters
-    private final static int runDuration=10;
+    private final static int runDuration=500;
     private final static int N=500;
 
     //Peer Sampling Service
@@ -115,12 +117,17 @@ public class DIASLossExperiment extends SimulatedExperiment
 //	}
 
     public static void main(String[] args) {
-        System.out.println(expID+"\n");
+    	expID = args[0];
+    	//required because measurement dumper does not dump if folder doesn't exist
+    	new File(expID).mkdirs();
+    	DIASLossExperiment.MIN_DELAY = Integer.parseInt(args[1]);
+    	DIASLossExperiment.MAX_DELAY = Integer.parseInt(args[2]);
+    	DIASLossExperiment.LOSSES_FRACTION = Double.parseDouble(args[3]);
+    	System.out.println(args[0]+ " mindelay "+args[1]+" maxdelay "+args[2]+ " lossfraction "+args[3]);
+    	
         Experiment.initEnvironment();
         final DIASLossExperiment dias = new DIASLossExperiment();
         dias.init();
-        final File folder = new File("peersLog/"+expID);
-        folder.mkdirs();
         PeerFactory peerFactory=new PeerFactory() {
             public Peer createPeer(int peerIndex, Experiment experiment) {
                 Peer newPeer = new Peer(peerIndex);
@@ -189,7 +196,7 @@ public class DIASLossExperiment extends SimulatedExperiment
 	@Override
 	public NetworkInterfaceFactory createNetworkInterfaceFactory() {
 		System.out.println("Creating LossyInterface");
-		DelayLossNetworkModel delayLossNetworkModel = new LossyUniformDelayModel(10, 100, 0.001);
+		DelayLossNetworkModel delayLossNetworkModel = new LossyUniformDelayModel(MIN_DELAY, MAX_DELAY, LOSSES_FRACTION);
 		return new DelayLossNetworkInterfaceFactory(eventScheduler, delayLossNetworkModel);
 	}
 

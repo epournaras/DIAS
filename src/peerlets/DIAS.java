@@ -179,7 +179,7 @@ public class DIAS extends BasePeerlet implements DIASInterface, AggregationInter
     @Override
     public void init(Peer peer){
         super.init(peer);
-        this.id=id+getPeer().getIdentifier().toString();
+        this.id=id+'/'+getPeer().getIdentifier().toString();
     }
 
     /**
@@ -489,7 +489,7 @@ public class DIAS extends BasePeerlet implements DIASInterface, AggregationInter
      * Scheduling the measurements for DIAS
      */
     private void scheduleMeasurements(){
-        dumper=new MeasurementFileDumper("peersLog/"+id);
+        dumper=new MeasurementFileDumper(id);
         getPeer().getMeasurementLogger().addMeasurementLoggerListener(new MeasurementLoggerListener(){
             public void measurementEpochEnded(MeasurementLog log, int epochNumber){
                 if(getPeer().getNetworkAddress().toString().equals("10"))

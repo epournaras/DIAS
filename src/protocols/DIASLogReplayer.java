@@ -21,9 +21,14 @@ import dsutil.protopeer.services.aggregation.AggregationFunction;
 import aggregation.AggregationState;
 import communication.DIASMessType;
 import consistency.AggregationOutcome;
+
+import java.io.BufferedInputStream;
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.IOException;
+import java.io.ObjectInputStream;
 import java.math.BigDecimal;
+
 import peerlets.measurements.MeasurementTags;
 import protopeer.measurement.LogReplayer;
 import protopeer.measurement.MeasurementLog;
@@ -54,12 +59,18 @@ public class DIASLogReplayer {
         try{
             File folder = new File(directory);
             File[] listOfFiles = folder.listFiles();
+            //live experiments don't start at 0 but at unix time, so when extracting epochs need to add minepoch
+            int minepoch = 0;
             for (int i = 0; i < listOfFiles.length; i++) {
                 if (listOfFiles[i].isFile()&&!listOfFiles[i].isHidden()) {
-                	MeasurementLog loadedLog=replayer.loadLogFromFile2(directory+"/"+listOfFiles[i].getName());
+                	MeasurementLog loadedLog=/*replayer.*/loadLogFromFileME(directory+"/"+listOfFiles[i].getName());
+                	if(i==0) {
+                    	minepoch = loadedLog.getMinEpochNumber();
+                    	//System.err.println("Set minepoch to " + minepoch);
+                    } 
                 	//System.err.println(listOfFiles[i]);
                     //System.err.println(loadedLog.toString());
-                    MeasurementLog replayedLog=this.getMemorySupportedLog(loadedLog, minLoad, maxLoad);
+                	MeasurementLog replayedLog=this.getMemorySupportedLog(loadedLog, minepoch+minLoad, minepoch+maxLoad);
                     replayer.mergeLog(replayedLog);
                 }
                 else
@@ -160,5 +171,31 @@ public class DIASLogReplayer {
         bd = bd.setScale(decimalPlace, BigDecimal.ROUND_UP);
         return bd.doubleValue();
     }
+    
+    public MeasurementLog loadLogFromFileME(String filename) throws IOException, ClassNotFoundException {
+		MeasurementLog combinedLog=new MeasurementLog();
+		ObjectInputStream logIn = null;
+		BufferedInputStream logFileIn = null;		
+		try {
+			logFileIn = new BufferedInputStream(new FileInputStream(filename), 1024 * 1024);
+			logIn = new ObjectInputStream(logFileIn);			
+			while (logFileIn.available() > 0) {				
+				Object object = logIn.readObject();
+				MeasurementLog log = (MeasurementLog) object;
+				combinedLog.mergeWith(log);
+			}
+		} catch (IOException ex) {	
+			ex.printStackTrace();
+			return combinedLog;
+		} finally {
+			if (logFileIn != null) {
+				logFileIn.close();
+			}
+			if (logIn != null) {
+				logIn.close();
+			}
+		}				
+		return combinedLog;
+	}
 
 }

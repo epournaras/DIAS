@@ -48,12 +48,11 @@ import enums.ViewPropagationPolicy;
  */
 public class DIASLiveExperiment extends LiveExperiment {
 
-	private final static String expSeqNum = "01";
-	private final static String expID = "Experiment " + expSeqNum + "/";
+    private static String expID="LiveExperiment/";
 
 	// Simulation Parameters
-	private final static int runDuration = 50;
-	private final static int N = 500;
+	private final static int runDuration = 500;
+	//private final static int N = 500;
 
 	// Peer Sampling Service
 	private final static int c = 50;
@@ -102,18 +101,16 @@ public class DIASLiveExperiment extends LiveExperiment {
 	private final static GenerationScheme genScheme = GenerationScheme.BETA;
 	private final static SelectionScheme selScheme = SelectionScheme.CYCLICAL;
 
-	// @Override
-	// public NetworkInterfaceFactory createNetworkInterfaceFactory() {
-	// return new DelayLossNetworkInterfaceFactory(getEventScheduler(),new UniformDelayModel(0.15,2.5));
-	// }
-
 	public static void main(String[] args) {
+		expID = args[0];
+    	//required because measurement dumper does not dump if folder doesn't exist
+    	new File(expID).mkdirs();
 		// env setup (configfile)
 		Experiment.initEnvironment();
-		// take the peer index from the first command-line argument
-		MainConfiguration.getSingleton().peerIndex = Integer.parseInt(args[0]);
-		// take the port number to bind to from the second command-line argument
-		MainConfiguration.getSingleton().peerPort = Integer.parseInt(args[1]);
+		// take the peer index from the second command-line argument
+		MainConfiguration.getSingleton().peerIndex = Integer.parseInt(args[1]);
+		// take the port number to bind to from the third command-line argument
+		MainConfiguration.getSingleton().peerPort = Integer.parseInt(args[2]);
 
 		// peer setup (from configfile)
 		final DIASLiveExperiment dias_experiment = new DIASLiveExperiment();
@@ -134,12 +131,10 @@ public class DIASLiveExperiment extends LiveExperiment {
 				
 				newPeer.addPeerlet(new PeerSamplingService(c, H, S, peerSelectionPolicy, viewPropagationPolicy, Tpss,
 						A, B));
-				/*
 				newPeer.addPeerlet(new DIAS(expID, Tdias, numOfSessions, Tsampling, sampleSize, strategy,
 						unexploitedSize, outdatedSize, exploitedSize, collectBloomFilterParams()));
 				newPeer.addPeerlet(new SimpleDIASApplication(expID, Tboot, Taggr, k, minValueDomain, maxValueDomain, t,
 						Pt, Ps, genScheme, selScheme, type));
-				*/
 				return newPeer;
 			}
 		};

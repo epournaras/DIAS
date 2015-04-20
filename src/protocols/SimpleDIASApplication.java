@@ -54,7 +54,7 @@ public class SimpleDIASApplication extends BasePeerlet implements DIASApplicatio
     private AggregationType aggregationType;
     private State selectedState;
     private ArrayList<State> possibleStates;
-    private MeasurementFileDumper dumper;
+    //private MeasurementFileDumper dumper;
     private int Tboot;
     private int Taggr;
     private String id;
@@ -116,7 +116,7 @@ public class SimpleDIASApplication extends BasePeerlet implements DIASApplicatio
     @Override
     public void init(Peer peer){
         super.init(peer);
-        this.id=this.id+getPeer().getIdentifier().toString();
+        this.id=this.id+'/'+getPeer().getIdentifier().toString();
     }
 
     /**
@@ -458,7 +458,8 @@ public class SimpleDIASApplication extends BasePeerlet implements DIASApplicatio
      * are logged in this case.
      */
     private void scheduleMeasurements(){
-        dumper=new MeasurementFileDumper(id);
+    	//System.out.println("SimpleDiasApplication dumper disabled!");
+        //dumper=new MeasurementFileDumper(id);
         getPeer().getMeasurementLogger().addMeasurementLoggerListener(new MeasurementLoggerListener(){
             public void measurementEpochEnded(MeasurementLog log, int epochNumber){
                 getAggregates(getAggregationInterface());
@@ -470,7 +471,7 @@ public class SimpleDIASApplication extends BasePeerlet implements DIASApplicatio
                 log.log(epochNumber, AggregationFunction.STDEV, stdev);
                 log.log(epochNumber, AggregationFunction.COUNT, count);
                 log.log(epochNumber, "SELECTION", ((ArithmeticState)selectedState).getValue());
-                dumper.measurementEpochEnded(log, epochNumber);
+                //dumper.measurementEpochEnded(log, epochNumber);
                 log.shrink(epochNumber, epochNumber+1);
             }
         });
