@@ -51,16 +51,17 @@ public class DIASApplExperiment extends SimulatedExperiment
 {
 
     private final static String expSeqNum="01";
-    private final static String expID="Experiment"+expSeqNum+"/";
+    private final static String expID="dump/Experiment"+expSeqNum+"/";
 
     //Simulation Parameters
     private final static int runDuration=300;
-    private final static int N=10;
+    private final static int N=12;
 
     //Peer Sampling Service
-    private final static int c=50;
-    private final static int H=0;
-    private final static int S=25;
+    /*  Each node maintains addresses by means of a partial view, which is a set of c node descriptors. */
+    private final static int c=4;
+    private final static int H=0; //healing. force remove some neihgbors periodically to elimiate dead links
+    private final static int S=2; //swap. 
     private final static ViewPropagationPolicy viewPropagationPolicy=ViewPropagationPolicy.PUSHPULL;
     private final static PeerSelectionPolicy peerSelectionPolicy=PeerSelectionPolicy.RAND;
     private final static int Tpss=250;
@@ -70,11 +71,11 @@ public class DIASApplExperiment extends SimulatedExperiment
     //DIAS Service Parameterization
     private final static int Tdias=1000;
     private final static int Tsampling=250;
-    private final static int sampleSize=15;
+    private final static int sampleSize=2;
     private final static int numOfSessions=10;
-    private final static int unexploitedSize=15;
-    private final static int outdatedSize=15;
-    private final static int exploitedSize=15;
+    private final static int unexploitedSize=2;
+    private final static int outdatedSize=2;
+    private final static int exploitedSize=2;
     private final static AggregationStrategy.Strategy strategy=AggregationStrategy.Strategy.EXPLOITATION;
     private final static BloomFilterType amsType=BloomFilterType.COUNTING;
     private final static int amsHashType=CHashFactory.DOUBLE_HASH;

@@ -61,13 +61,13 @@ public class DIASLossExperiment extends SimulatedExperiment
 
     //Simulation Parameters
     private final static int runDuration=500;
-    private final static int N=500;
+    private final static int N=50;
 
     //Peer Sampling Service
-    private final static int c=50;
+    private final static int c=50; //max num neihgbh
     private final static int H=0;
-    private final static int S=25;
-    private final static ViewPropagationPolicy viewPropagationPolicy=ViewPropagationPolicy.PUSHPULL;
+    private final static int S=25; //peersamplingservice paper formula
+    private final static ViewPropagationPolicy viewPropagationPolicy=ViewPropagationPolicy.PUSH;
     private final static PeerSelectionPolicy peerSelectionPolicy=PeerSelectionPolicy.RAND;
     private final static int Tpss=250;
     private final static int A=1000;
