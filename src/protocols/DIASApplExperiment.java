@@ -55,7 +55,7 @@ public class DIASApplExperiment extends SimulatedExperiment
 
     //Simulation Parameters
     private final static int runDuration=300;
-    private final static int N=500;
+    private final static int N=10;
 
     //Peer Sampling Service
     private final static int c=50;
@@ -115,7 +115,7 @@ public class DIASApplExperiment extends SimulatedExperiment
         Experiment.initEnvironment();
         final DIASApplExperiment dias = new DIASApplExperiment();
         dias.init();
-        final File folder = new File("peersLog/"+expID);
+        final File folder = new File("dump/"+expID);
         folder.mkdirs();
         PeerFactory peerFactory=new PeerFactory() {
             public Peer createPeer(int peerIndex, Experiment experiment) {
