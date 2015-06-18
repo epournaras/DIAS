@@ -22,12 +22,17 @@ import dsutil.protopeer.services.aggregation.AggregationType;
 import dsutil.generic.state.ArithmeticState;
 import cern.jet.random.Beta;
 import cern.jet.random.engine.MersenneTwister;
+
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
+
 import javax.media.jai.util.Range;
+
+import org.apache.log4j.Logger;
+
 import peerlets.DIASInterface;
 import protopeer.BasePeerlet;
 import protopeer.Peer;
@@ -36,9 +41,11 @@ import dsutil.protopeer.services.aggregation.AggregationInterface;
 import protopeer.measurement.MeasurementFileDumper;
 import protopeer.measurement.MeasurementLog;
 import protopeer.measurement.MeasurementLoggerListener;
+import protopeer.network.Message;
 import protopeer.time.Timer;
 import protopeer.time.TimerListener;
 import protopeer.util.quantities.Time;
+
 
 /**
  * This is an use-case example of a DIAS application. It simulates the generation
@@ -66,6 +73,7 @@ public class SimpleDIASApplication extends BasePeerlet implements DIASApplicatio
     private Time randomInterval;
     private GenerationScheme genScheme;
     private SelectionScheme selScheme;
+    private int ind;
 
     private double avg;
     private double sum;
@@ -74,6 +82,8 @@ public class SimpleDIASApplication extends BasePeerlet implements DIASApplicatio
     private double min;
     private double stdev;
     private double count;
+    
+    private static final Logger logger = Logger.getLogger(SimpleDIASApplication.class);
 
     /**
      * Initializes a DIAS application.
@@ -117,6 +127,7 @@ public class SimpleDIASApplication extends BasePeerlet implements DIASApplicatio
     public void init(Peer peer){
         super.init(peer);
         this.id=this.id+'/'+getPeer().getIdentifier().toString();
+        this.ind = getPeer().getIndexNumber();
     }
 
     /**
@@ -131,6 +142,8 @@ public class SimpleDIASApplication extends BasePeerlet implements DIASApplicatio
         this.scheduleMeasurements();
         this.runBootstrap();
         this.runStateDynamics();
+        logger.debug("started peer " + this.id + " with state: " + getSelectedState());
+
     }
 
     /**
@@ -240,6 +253,8 @@ public class SimpleDIASApplication extends BasePeerlet implements DIASApplicatio
             this.min=(Double)aggregator.getAggregate(AggregationFunction.MIN);
             this.count=(Double)aggregator.getAggregate(AggregationFunction.COUNT);
             //System.out.println(this.id+" "+System.currentTimeMillis()+" "+avg+" "+stdev+" "+min+" "+max+" "+count);
+            //System.out.println(this.id+" "+System.currentTimeMillis()+" "+this.max + " " + this.avg);
+            logger.debug(this.id+" "+ this.ind + " " + System.currentTimeMillis()+" "+this.max + " " + this.min);
         }
     }
 
@@ -330,7 +345,7 @@ public class SimpleDIASApplication extends BasePeerlet implements DIASApplicatio
     /**
      * Generates random arithmetic states given an input domain of values. The
      * random values are first generated in the range [0,1) and then are transfered
-     * proportioally in the input domain range according to the following formula:
+     * proportionally in the input domain range according to the following formula:
      *
      * (r-0)/(1-r)=(x-min)/(max-x) =>
      * r*max-r*x=x-min-r*x+r*min =>
@@ -357,7 +372,7 @@ public class SimpleDIASApplication extends BasePeerlet implements DIASApplicatio
     /**
      * Generates uniform arithmetic states given an input domain of values. The
      * uniform values are first generated in the range [0,1) and then are transfered
-     * proportioally in the input domain range according to the following formula:
+     * proportionally in the input domain range according to the following formula:
      *
      * (r-0)/(1-r)=(x-min)/(max-x) =>
      * r*max-r*x=x-min-r*x+r*min =>
@@ -444,8 +459,8 @@ public class SimpleDIASApplication extends BasePeerlet implements DIASApplicatio
      *
      * @return true if a new selection is performed
     */
+    double r=Math.random();
     public boolean changeSelectedState(){
-        double r=Math.random();
         if(r<Ps*Pt){
             this.selectedState=this.selectPossibleState();
             return true;
@@ -475,5 +490,5 @@ public class SimpleDIASApplication extends BasePeerlet implements DIASApplicatio
                 log.shrink(epochNumber, epochNumber+1);
             }
         });
-    }
+    }   
 }
