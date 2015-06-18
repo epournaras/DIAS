@@ -68,15 +68,15 @@ import protopeer.util.quantities.Time;
  * the aggregate of the aggregationEpoch.The mutual membership model that DIAS exploits is
  * the following:
  *
- * 1. Aggregators have memberships disseminators and vise versa
+ * 1. Aggregators have memberships disseminators and vice versa
  * 2. A possible selectedState has membership of aggregators and a disseminator has
  * memberships of aggregators.
  * 3. An aggregate of an aggregator has memberships of possibleStates and a disseminator
  * has possible possibleStates selected by aggregators
  *
- * Based on this mutual memberhsips, consistency checks are performed that
- * gurantee (probabilistically) that the aggregation is updated and is free of
- * double counts free.
+ * Based on this mutual memberships, consistency checks are performed that
+ * guarantee (probabilistically) that the aggregation is updated and is free of
+ * double counts.
  *
  * The application can change the selected selectedState on-the-fly or even start a new
  * aggregation aggregationEpoch by providing new possible possibleStates and a selected selectedState.
@@ -85,7 +85,7 @@ import protopeer.util.quantities.Time;
  * contacts periodically the aggregator of another host and provides the required
  * information. The aggregator replies back to the disseminator. The roles
  * exchange in each host. The aggregator becomes disseminator and contacts the
- * previous disseminator that is an aggrgator in this phase. The communications
+ * previous disseminator that is an aggregator in this phase. The communications
  * is realized in 3 messages:
  *
  * 1. Host A (Disseminator): Send PUSH to Host B (Aggregator)
@@ -112,11 +112,11 @@ import protopeer.util.quantities.Time;
  *
  * Based on these three types of neighbors, 3 strategies are employed:
  *
- * 1. RANDOM: Either a outdated or an unexploited neighbor is selected for aggregation.
+ * 1. RANDOM: Either an outdated or an unexploited neighbor is selected for aggregation.
  * If there is no available neighbor in either of them, the second choice is tried
  * 2. EXPLOITATION: Unexploited neighbors are selected. If there is no any available,
  * an outdated is selected.
- * 3. UPDATE: An outdayed neighbor is selected. If there is no any available,
+ * 3. UPDATE: An outdated neighbor is selected. If there is no any available,
  * an unexploited is selected.
  *
  * @author Evangelos
@@ -492,8 +492,8 @@ public class DIAS extends BasePeerlet implements DIASInterface, AggregationInter
         dumper=new MeasurementFileDumper(id);
         getPeer().getMeasurementLogger().addMeasurementLoggerListener(new MeasurementLoggerListener(){
             public void measurementEpochEnded(MeasurementLog log, int epochNumber){
-                if(getPeer().getNetworkAddress().toString().equals("10"))
-                    System.out.println("Epoch: "+epochNumber);
+                if(getPeer().getNetworkAddress().toString().equals("0"))
+                	System.out.println("Epoch: "+epochNumber);
                 if(active){
                     log.log(epochNumber, MeasurementTags.EPOCH, aggregationEpoch);
 //                    log.log(epochNumber, MeasurementTags.EXPLOITED_SIZE, strategy.getExploitedSize());
