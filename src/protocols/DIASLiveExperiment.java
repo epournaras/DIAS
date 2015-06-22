@@ -55,9 +55,9 @@ public class DIASLiveExperiment extends LiveExperiment {
 	//private final static int N = 500;
 
 	// Peer Sampling Service
-	private final static int c = 50; //view (max number of neighbors)
+	private final static int c = 6; //view (max number of neighbors)
 	private final static int H = 0; 
-	private final static int S = 25; //PeersSamplingSErvice paper formula
+	private final static int S = 3; //PeersSamplingSErvice paper formula
 	private final static ViewPropagationPolicy viewPropagationPolicy = ViewPropagationPolicy.PUSHPULL;
 	private final static PeerSelectionPolicy peerSelectionPolicy = PeerSelectionPolicy.RAND;
 	private final static int Tpss = 250;
@@ -67,11 +67,11 @@ public class DIASLiveExperiment extends LiveExperiment {
 	// DIAS Service Parameterization
 	private final static int Tdias = 10000;
 	private final static int Tsampling = 2500; //pulling info from PSS to DIAS locally
-	private final static int sampleSize = 15; //number of nodes
+	private final static int sampleSize = 5; //number of nodes
 	private final static int numOfSessions = 10;
-	private final static int unexploitedSize = 15;
-	private final static int outdatedSize = 15;
-	private final static int exploitedSize = 15;
+	private final static int unexploitedSize = 5;
+	private final static int outdatedSize = 5;
+	private final static int exploitedSize = 5;
 	private final static AggregationStrategy.Strategy strategy = AggregationStrategy.Strategy.EXPLOITATION;
 	private final static BloomFilterType amsType = BloomFilterType.COUNTING;
 	private final static int amsHashType = CHashFactory.DOUBLE_HASH;

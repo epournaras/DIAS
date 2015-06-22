@@ -17,8 +17,16 @@
  */
 package actors;
 
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.UUID;
+
+import org.apache.log4j.Logger;
+
+import protopeer.Finger;
 import aggregation.AggregationState;
-import dsutil.protopeer.services.aggregation.AggregationType;
 import bloomfilter.CBloomFilter;
 import bloomfilter.CCountingFilter;
 import bloomfilter.CHashFactory;
@@ -27,14 +35,10 @@ import consistency.AggregationOutcome;
 import consistency.AggregatorReport;
 import consistency.BloomFilterParams;
 import consistency.DisseminatorReport;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.Map;
-import java.util.UUID;
-import protopeer.Finger;
+import dsutil.generic.state.ArithmeticState;
 import dsutil.generic.state.State;
 import dsutil.generic.state.StateException;
+import dsutil.protopeer.services.aggregation.AggregationType;
 
 /**
  * The aggregator stores the aggregates and the aggregation memberships for the
@@ -351,6 +355,7 @@ public class Aggregator {
         State AMSAddition=null;
         AggregationOutcome outcome=null;
         State newState=(State)disseminatorReport.get(DisseminatorReport.SELECTED_STATE);
+        
         HashMap<UUID, Double> posAMSFalsoPos=(HashMap<UUID, Double>)disseminatorReport.get(DisseminatorReport.POSITIVE_AMS_FP);
         double AMDFalsePos=((Double)disseminatorReport.get(DisseminatorReport.AMD_FP)).doubleValue();
         boolean positiveAMD=((Boolean)disseminatorReport.get(DisseminatorReport.POSITIVE_AMD)).booleanValue();

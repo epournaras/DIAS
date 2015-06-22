@@ -35,6 +35,7 @@ plt.plot(lx,label='max')
 plt.title(sys.argv[1])
 plt.ylabel("% Deviation of Estimate vs Actual")
 plt.xlabel("Epoch")
+plt.ylim([0,200])
 plt.legend()
 plt.show()
 		
