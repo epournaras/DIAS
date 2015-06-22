@@ -33,7 +33,7 @@ import protopeer.network.delayloss.DelayLossNetworkInterfaceFactory;
 import protopeer.network.delayloss.DelayLossNetworkModel;
 import protopeer.network.delayloss.LossyUniformDelayModel;
 import protopeer.servers.bootstrap.BootstrapClient;
-import protopeer.servers.bootstrap.BootstrapServer;
+import protopeer.servers.bootstrap.BootstrapServerUniform;
 import protopeer.servers.bootstrap.SimpleConnector;
 import protopeer.servers.bootstrap.SimplePeerIdentifierGenerator;
 import protopeer.util.quantities.Time;
@@ -60,13 +60,13 @@ public class DIASLossExperiment extends SimulatedExperiment
     private static String expID="LossExperiment/";
 
     //Simulation Parameters
-    private final static int runDuration=500;
-    private final static int N=50;
+    private final static int runDuration=300;
+    private final static int N=3;
 
     //Peer Sampling Service
-    private final static int c=50; //max num neihgbh
+    private final static int c=4; //max num neihgbh
     private final static int H=0;
-    private final static int S=25; //peersamplingservice paper formula
+    private final static int S=2; //peersamplingservice paper formula
     private final static ViewPropagationPolicy viewPropagationPolicy=ViewPropagationPolicy.PUSH;
     private final static PeerSelectionPolicy peerSelectionPolicy=PeerSelectionPolicy.RAND;
     private final static int Tpss=250;
@@ -76,11 +76,11 @@ public class DIASLossExperiment extends SimulatedExperiment
     //DIAS Service Parameterization
     private final static int Tdias=1000;
     private final static int Tsampling=250;
-    private final static int sampleSize=15;
-    private final static int numOfSessions=10;
-    private final static int unexploitedSize=15;
-    private final static int outdatedSize=15;
-    private final static int exploitedSize=15;
+    private final static int sampleSize=2;
+    private final static int numOfSessions=1; //num of exchange messages per round
+    private final static int unexploitedSize=2;
+    private final static int outdatedSize=2;
+    private final static int exploitedSize=2;
     private final static AggregationStrategy.Strategy strategy=AggregationStrategy.Strategy.EXPLOITATION;
     private final static BloomFilterType amsType=BloomFilterType.COUNTING;
     private final static int amsHashType=CHashFactory.DOUBLE_HASH;
@@ -106,7 +106,7 @@ public class DIASLossExperiment extends SimulatedExperiment
     private final static double maxValueDomain=1;
     private final static double Pt=1.0;
     private final static double Ps=1.0;
-    private final static int t=200000;
+    private final static int t=100000;
     private final static GenerationScheme genScheme=GenerationScheme.BETA;
     private final static SelectionScheme selScheme=SelectionScheme.CYCLICAL;
 
@@ -133,7 +133,7 @@ public class DIASLossExperiment extends SimulatedExperiment
                 Peer newPeer = new Peer(peerIndex);
                 if (peerIndex == 0) {
                 	//CallsRingTopologyGenerator, which requires initialNodeDegree to set how many neighbors a client will receive, and initialCoreNodes to know how long to wait.
-                    newPeer.addPeerlet(new BootstrapServer());
+                    newPeer.addPeerlet(new BootstrapServerUniform());
                 }
                 //list. stores neighbors
                 newPeer.addPeerlet(new NeighborManager());
