@@ -101,7 +101,7 @@ public class DIASApplExperiment extends SimulatedExperiment
     private final static double maxValueDomain=1;
     private final static double Pt=1.0;
     private final static double Ps=1.0;
-    private final static int t=10000;
+    private final static int t=100000;
     private final static GenerationScheme genScheme=GenerationScheme.BETA;
     private final static SelectionScheme selScheme=SelectionScheme.CYCLICAL;
 

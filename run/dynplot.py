@@ -59,4 +59,4 @@ while True:
 	plt.draw()
 
 	print "Wait"
-	time.sleep(10)
+	time.sleep(5)

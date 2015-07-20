@@ -1,8 +1,7 @@
 #!/bin/bash
 
-folder=dump/live_30n_600s/
 nodes=10
-runtime=60
+runtime=40
 folder=dump/live_${nodes}nodes_${runtime}s/
 
 #args= folder, ID, Port (port0=auto)
@@ -13,7 +12,7 @@ sleep 1
 
 i=1
 while [ $i -le $nodes ]; do
-    java -Dvar=$(basename $folder)_0 -cp ../lib/*:../build/classes/ protocols.DIASLiveExperiment $folder $i 0 &
+    java -Dvar=$(basename $folder)_$i -cp ../lib/*:../build/classes/ protocols.DIASLiveExperiment $folder $i 0 &
     i=$((i+1))
 done      
 sleep 10

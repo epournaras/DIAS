@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #configure
-nodes=10
+nodes=15
 runtime=60
 folder=dump/live_${nodes}nodes_${runtime}s/
 
