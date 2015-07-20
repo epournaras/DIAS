@@ -51,7 +51,7 @@ public class DIASLiveExperiment extends LiveExperiment {
     private static String expID="LiveExperiment/";
 
 	// Simulation Parameters
-	private final static int runDuration = 500;
+	//private final static int runDuration = 500;
 	//private final static int N = 500;
 
 	// Peer Sampling Service
@@ -65,8 +65,8 @@ public class DIASLiveExperiment extends LiveExperiment {
 	private final static int B = 6000;
 
 	// DIAS Service Parameterization
-	private final static int Tdias = 10000;
-	private final static int Tsampling = 2500; //pulling info from PSS to DIAS locally
+	private final static int Tdias = 1000;
+	private final static int Tsampling = 500; //pulling info from PSS to DIAS locally
 	private final static int sampleSize = 5; //number of nodes
 	private final static int numOfSessions = 10;
 	private final static int unexploitedSize = 5;
@@ -91,7 +91,7 @@ public class DIASLiveExperiment extends LiveExperiment {
 	// DIAS Application Parameterization
 	private final static AggregationType type = AggregationType.ARITHMETIC;
 	private final static int Tboot = 15000;
-	private final static int Taggr = runDuration * 1000;
+	private final static int Taggr = 500000;
 	private final static int k = 5;
 	private final static double minValueDomain = 0;
 	private final static double maxValueDomain = 1;
