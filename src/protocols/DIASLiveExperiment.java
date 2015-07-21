@@ -18,6 +18,9 @@
 package protocols;
 
 import java.io.File;
+import java.net.Inet4Address;
+import java.net.InetAddress;
+import java.net.UnknownHostException;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -33,7 +36,6 @@ import protopeer.servers.bootstrap.BootstrapClient;
 import protopeer.servers.bootstrap.BootstrapServer;
 import protopeer.servers.bootstrap.SimpleConnector;
 import protopeer.servers.bootstrap.SimplePeerIdentifierGenerator;
-import protopeer.util.quantities.Time;
 import bloomfilter.CHashFactory;
 import communication.AggregationStrategy;
 import consistency.BloomFilterParams;
@@ -101,7 +103,7 @@ public class DIASLiveExperiment extends LiveExperiment {
 	private final static GenerationScheme genScheme = GenerationScheme.BETA;
 	private final static SelectionScheme selScheme = SelectionScheme.CYCLICAL;
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws UnknownHostException {
 		expID = args[0];
     	//required because measurement dumper does not dump if folder doesn't exist
     	new File(expID).mkdirs();
@@ -111,7 +113,9 @@ public class DIASLiveExperiment extends LiveExperiment {
 		MainConfiguration.getSingleton().peerIndex = Integer.parseInt(args[1]);
 		// take the port number to bind to from the third command-line argument
 		MainConfiguration.getSingleton().peerPort = Integer.parseInt(args[2]);
-
+		
+		MainConfiguration.getSingleton().peerIP = InetAddress.getLocalHost();
+		
 		// peer setup (from configfile)
 		final DIASLiveExperiment dias_experiment = new DIASLiveExperiment();
 		dias_experiment.init();
