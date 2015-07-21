@@ -254,7 +254,7 @@ public class SimpleDIASApplication extends BasePeerlet implements DIASApplicatio
             this.count=(Double)aggregator.getAggregate(AggregationFunction.COUNT);
             //System.out.println(this.id+" "+System.currentTimeMillis()+" "+avg+" "+stdev+" "+min+" "+max+" "+count);
             //System.out.println(this.id+" "+System.currentTimeMillis()+" "+this.max + " " + this.avg);
-            logger.debug("idx"+ this.ind + " sum: " +this.sum +" cnt: "+this.count);
+            logger.debug(" nodeidx"+ this.ind + " sum: " +this.sum + " avg: " + this.avg + " count: " + this.count);
         }
     }
 
