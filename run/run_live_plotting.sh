@@ -1,8 +1,8 @@
 #!/bin/bash
 
 #configure
-nodes=15
-runtime=60
+nodes=10
+runtime=250
 folder=dump/live_${nodes}nodes_${runtime}s/
 
 ##handle aborts correctly
@@ -18,13 +18,13 @@ echo START HEAD NODE
 #args= folder, ID, Port (port0=auto)
 rm -r $folder
 mkdir -p $folder
-java -Dvar=$(basename $folder)_0 -cp ../lib/*:../build/classes/ protocols.DIASLiveExperiment $folder 0 5555 &
+java -Dvar=$(basename $folder)_0 -cp bin/lib/*:bin/classes/ protocols.DIASLiveExperiment $folder 0 5555 &
 sleep 1
 
 echo START WORKERS
 i=1
 while [ $i -le $nodes ]; do
-    java -Dvar=$(basename $folder)_$i -cp ../lib/*:../build/classes/ protocols.DIASLiveExperiment $folder $i 0 &
+    java -Dvar=$(basename $folder)_$i -cp bin/lib/*:bin/classes/ protocols.DIASLiveExperiment $folder $i 0 &
     i=$((i+1))
 done      
 sleep 5

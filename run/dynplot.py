@@ -25,7 +25,7 @@ plt.show()
 
 while True:
 	print "Dump"
-	subprocess.call("java -cp ../lib/*:../build/classes/ protocols.DIASLogReplayer dump/%s | tail -n+4 > summaries/%s.dat"%(folder,folder),shell=True)
+	subprocess.call("java -cp bin/lib/*:bin/classes/ protocols.DIASLogReplayer dump/%s | tail -n+4 > summaries/%s.dat"%(folder,folder),shell=True)
 	print "Read"
 	f = open("summaries/%s.dat"%folder, 'rb')
 	reader = csv.DictReader(f)
@@ -59,4 +59,4 @@ while True:
 	plt.draw()
 
 	print "Wait"
-	time.sleep(5)
+	time.sleep(10)

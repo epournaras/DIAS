@@ -18,8 +18,6 @@
 package protocols;
 
 import java.io.File;
-import java.net.Inet4Address;
-import java.net.InetAddress;
 import java.net.UnknownHostException;
 import java.util.HashMap;
 import java.util.Map;
@@ -33,11 +31,13 @@ import protopeer.NeighborManager;
 import protopeer.Peer;
 import protopeer.PeerFactory;
 import protopeer.servers.bootstrap.BootstrapClient;
-import protopeer.servers.bootstrap.BootstrapServer;
+import protopeer.servers.bootstrap.BootstrapServerUniform;
 import protopeer.servers.bootstrap.SimpleConnector;
 import protopeer.servers.bootstrap.SimplePeerIdentifierGenerator;
 import bloomfilter.CHashFactory;
+
 import communication.AggregationStrategy;
+
 import consistency.BloomFilterParams;
 import consistency.BloomFilterType;
 import dsutil.protopeer.services.aggregation.AggregationType;
@@ -57,9 +57,9 @@ public class DIASLiveExperiment extends LiveExperiment {
 	//private final static int N = 500;
 
 	// Peer Sampling Service
-	private final static int c = 6; //view (max number of neighbors)
+	private final static int c = 4; //view (max number of neighbors)
 	private final static int H = 0; 
-	private final static int S = 3; //PeersSamplingSErvice paper formula
+	private final static int S = 2; //PeersSamplingSErvice paper formula
 	private final static ViewPropagationPolicy viewPropagationPolicy = ViewPropagationPolicy.PUSHPULL;
 	private final static PeerSelectionPolicy peerSelectionPolicy = PeerSelectionPolicy.RAND;
 	private final static int Tpss = 250;
@@ -69,11 +69,11 @@ public class DIASLiveExperiment extends LiveExperiment {
 	// DIAS Service Parameterization
 	private final static int Tdias = 1000;
 	private final static int Tsampling = 500; //pulling info from PSS to DIAS locally
-	private final static int sampleSize = 5; //number of nodes
+	private final static int sampleSize = 2; //number of nodes
 	private final static int numOfSessions = 10;
-	private final static int unexploitedSize = 5;
-	private final static int outdatedSize = 5;
-	private final static int exploitedSize = 5;
+	private final static int unexploitedSize = 2;
+	private final static int outdatedSize = 2;
+	private final static int exploitedSize = 2;
 	private final static AggregationStrategy.Strategy strategy = AggregationStrategy.Strategy.EXPLOITATION;
 	private final static BloomFilterType amsType = BloomFilterType.COUNTING;
 	private final static int amsHashType = CHashFactory.DOUBLE_HASH;
@@ -99,7 +99,7 @@ public class DIASLiveExperiment extends LiveExperiment {
 	private final static double maxValueDomain = 1;
 	private final static double Pt = 1.0;
 	private final static double Ps = 1.0;
-	private final static int t = 200000;
+	private final static int t = 100000;
 	private final static GenerationScheme genScheme = GenerationScheme.BETA;
 	private final static SelectionScheme selScheme = SelectionScheme.CYCLICAL;
 
@@ -114,7 +114,7 @@ public class DIASLiveExperiment extends LiveExperiment {
 		// take the port number to bind to from the third command-line argument
 		MainConfiguration.getSingleton().peerPort = Integer.parseInt(args[2]);
 		
-		MainConfiguration.getSingleton().peerIP = InetAddress.getLocalHost();
+		//MainConfiguration.getSingleton().peerIP = InetAddress.getLocalHost();
 		
 		// peer setup (from configfile)
 		final DIASLiveExperiment dias_experiment = new DIASLiveExperiment();
@@ -124,7 +124,7 @@ public class DIASLiveExperiment extends LiveExperiment {
 			public Peer createPeer(int peerIndex, Experiment experiment) {
 				Peer newPeer = new Peer(peerIndex);
 				if (peerIndex == 0) {
-					newPeer.addPeerlet(new BootstrapServer());
+					newPeer.addPeerlet(new BootstrapServerUniform());
 					// MonintorServer
 				}
 				newPeer.addPeerlet(new NeighborManager());
