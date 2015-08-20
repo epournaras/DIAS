@@ -91,7 +91,7 @@ public class DIASLiveExperiment extends LiveExperiment {
 
 	// DIAS Application Parameterization
 	private final static AggregationType type = AggregationType.ARITHMETIC;
-	private final static int Tboot = 15000;
+	private final static int Tboot = 120000;
 	private final static int Taggr = 500000;
 	private final static int k = 5;
 	private final static double minValueDomain = 0;
