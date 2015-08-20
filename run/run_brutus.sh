@@ -1,7 +1,7 @@
 #!/bin/bash
 
 nodes=20
-runtime=650
+runtime=220
 folder=dump/distr_${nodes}n_${runtime}s/
 ip=10.201.0.3$(hostname | cut -c7)
 sed -i "s/peerZeroIP=.*/peerZeroIP=$ip/" conf/protopeer.conf
@@ -20,14 +20,17 @@ function ctrlc() {
 echo START HEAD NODE
 rm -r $folder
 mkdir -p $folder
-java -Dvar=live0 -cp bin/lib/*:bin/classes/ protocols.DIASLiveExperiment $folder 0 5555 &
+java -Dvar=distr0 -cp bin/lib/*:bin/classes/ protocols.DIASLiveExperiment $folder 0 5555 $ip &
 
 echo START WORKERS
 i=1
 while [ $i -le $nodes ]; do
-    bsub -R rusage[mem=2014] java -Xmx1G -Dvar=distr$i -cp bin/lib/*:bin/classes/ protocols.DIASLiveExperiment $folder $i 0 
+    bsub -R rusage[mem=2014] <<EOF
+java -Xmx1G -Dvar=distr$i -cp bin/lib/*:bin/classes/ protocols.DIASLiveExperiment $folder $i 0 \$(grep \$(hostname) /etc/hosts | awk '{print \$1}')
+EOF
     i=$((i+1))
 done      
+sleep 10s
 
 echo WAITING FOR WORKERS TO START
 while [ "$(bjobs -w | grep "protocols.DIASLiveExperiment" | grep -c PEND)" -gt 0 ];

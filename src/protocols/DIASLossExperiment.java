@@ -61,7 +61,7 @@ public class DIASLossExperiment extends SimulatedExperiment
 
     //Simulation Parameters
     private final static int runDuration=300;
-    private final static int N=3;
+    private final static int N=25;
 
     //Peer Sampling Service
     private final static int c=4; //max num neihgbh
@@ -77,7 +77,7 @@ public class DIASLossExperiment extends SimulatedExperiment
     private final static int Tdias=1000;
     private final static int Tsampling=250;
     private final static int sampleSize=2;
-    private final static int numOfSessions=1; //num of exchange messages per round
+    private final static int numOfSessions=10; //num of exchange messages per round
     private final static int unexploitedSize=2;
     private final static int outdatedSize=2;
     private final static int exploitedSize=2;

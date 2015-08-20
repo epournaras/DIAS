@@ -2,7 +2,7 @@
 
 #configure
 nodes=10
-runtime=250
+runtime=180
 folder=dump/live_${nodes}nodes_${runtime}s/
 
 ##handle aborts correctly

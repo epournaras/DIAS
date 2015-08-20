@@ -18,6 +18,7 @@
 package protocols;
 
 import java.io.File;
+import java.net.InetAddress;
 import java.net.UnknownHostException;
 import java.util.HashMap;
 import java.util.Map;
@@ -35,9 +36,7 @@ import protopeer.servers.bootstrap.BootstrapServerUniform;
 import protopeer.servers.bootstrap.SimpleConnector;
 import protopeer.servers.bootstrap.SimplePeerIdentifierGenerator;
 import bloomfilter.CHashFactory;
-
 import communication.AggregationStrategy;
-
 import consistency.BloomFilterParams;
 import consistency.BloomFilterType;
 import dsutil.protopeer.services.aggregation.AggregationType;
@@ -57,9 +56,9 @@ public class DIASLiveExperiment extends LiveExperiment {
 	//private final static int N = 500;
 
 	// Peer Sampling Service
-	private final static int c = 4; //view (max number of neighbors)
+	private final static int c = 10; //view (max number of neighbors)
 	private final static int H = 0; 
-	private final static int S = 2; //PeersSamplingSErvice paper formula
+	private final static int S = 4; //PeersSamplingSErvice paper formula
 	private final static ViewPropagationPolicy viewPropagationPolicy = ViewPropagationPolicy.PUSHPULL;
 	private final static PeerSelectionPolicy peerSelectionPolicy = PeerSelectionPolicy.RAND;
 	private final static int Tpss = 250;
@@ -69,11 +68,11 @@ public class DIASLiveExperiment extends LiveExperiment {
 	// DIAS Service Parameterization
 	private final static int Tdias = 1000;
 	private final static int Tsampling = 500; //pulling info from PSS to DIAS locally
-	private final static int sampleSize = 2; //number of nodes
+	private final static int sampleSize = 10; //number of nodes
 	private final static int numOfSessions = 10;
-	private final static int unexploitedSize = 2;
-	private final static int outdatedSize = 2;
-	private final static int exploitedSize = 2;
+	private final static int unexploitedSize = 10;
+	private final static int outdatedSize = 10;
+	private final static int exploitedSize = 10;
 	private final static AggregationStrategy.Strategy strategy = AggregationStrategy.Strategy.EXPLOITATION;
 	private final static BloomFilterType amsType = BloomFilterType.COUNTING;
 	private final static int amsHashType = CHashFactory.DOUBLE_HASH;
@@ -112,9 +111,19 @@ public class DIASLiveExperiment extends LiveExperiment {
 		// take the peer index from the second command-line argument
 		MainConfiguration.getSingleton().peerIndex = Integer.parseInt(args[1]);
 		// take the port number to bind to from the third command-line argument
+		
 		MainConfiguration.getSingleton().peerPort = Integer.parseInt(args[2]);
 		
+		if(args.length==4) {
+			System.out.println("Setting peerIP to "+args[3]);
+			MainConfiguration.getSingleton().peerIP = InetAddress.getByName(args[3]);
+		}
 		//MainConfiguration.getSingleton().peerIP = InetAddress.getLocalHost();
+		int initial_degree = MainConfiguration.getSingleton().initialNodeDegree;
+		System.out.println("Initial degree to parametrize DIAS "+initial_degree);
+		final int dyn_c = initial_degree;
+		final int dyn_S = Math.min(2, (initial_degree / 2) );
+		final int dyn_samplesize = initial_degree;
 		
 		// peer setup (from configfile)
 		final DIASLiveExperiment dias_experiment = new DIASLiveExperiment();
@@ -133,10 +142,10 @@ public class DIASLiveExperiment extends LiveExperiment {
 				newPeer.addPeerlet(new BootstrapClient(Experiment.getSingleton().getAddressToBindTo(0),
 						new SimplePeerIdentifierGenerator()));
 				
-				newPeer.addPeerlet(new PeerSamplingService(c, H, S, peerSelectionPolicy, viewPropagationPolicy, Tpss,
+				newPeer.addPeerlet(new PeerSamplingService(dyn_c, H, dyn_S, peerSelectionPolicy, viewPropagationPolicy, Tpss,
 						A, B));
-				newPeer.addPeerlet(new DIAS(expID, Tdias, numOfSessions, Tsampling, sampleSize, strategy,
-						unexploitedSize, outdatedSize, exploitedSize, collectBloomFilterParams()));
+				newPeer.addPeerlet(new DIAS(expID, Tdias, numOfSessions, Tsampling, dyn_samplesize, strategy,
+						dyn_samplesize, dyn_samplesize, dyn_samplesize, collectBloomFilterParams()));
 				newPeer.addPeerlet(new SimpleDIASApplication(expID, Tboot, Taggr, k, minValueDomain, maxValueDomain, t,
 						Pt, Ps, genScheme, selScheme, type));
 				return newPeer;

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-nodes=10
+nodes=2
 runtime=180
 folder=dump/live_${nodes}nodes_${runtime}s/
 
