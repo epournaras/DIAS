@@ -1,8 +1,10 @@
 #!/bin/bash
-mindelay=10
+
+nodes=3
+mindelay=0
 maxdelay=100
-losses_fraction=0.1
-folder=dump/sim_${mindelay}-${maxdelay}delay_${losses_fraction}loss/
+losses_fraction=0
+folder=dump/sim_${mindelay}-${maxdelay}delay_${nodes}n/
 
 rm -vr $folder
 mkdir -v $folder

@@ -61,7 +61,7 @@ public class DIASLossExperiment extends SimulatedExperiment
 
     //Simulation Parameters
     private final static int runDuration=300;
-    private final static int N=25;
+    private final static int N=3;
 
     //Peer Sampling Service
     private final static int c=4; //max num neihgbh
