@@ -290,17 +290,18 @@ public class DIAS extends BasePeerlet implements DIASInterface, AggregationInter
 				Push push=(Push)message;
 				boolean amdCheck=this.disseminator.checkAMDMembership(push.sender);
                 boolean amsCheck=this.disseminator.checkAMSMembership(this.disseminator.getSelectedState(), push.sender);
-                if(this.strategy.isPossibleAggregation(amdCheck, amsCheck)){
-                    this.strategy.removeNeighbor(push.sender);
-                    PullPush plps=this.createPullPushMessage(push.sender, push.report);
-                    getPeer().sendMessage(push.sender.getNetworkAddress(), plps);
-                    this.numOfPullPushes++;
-                }
-                else{
+                //if(this.strategy.isPossibleAggregation(amdCheck, amsCheck)){
+                //    this.strategy.removeNeighbor(push.sender);
+                //    PullPush plps=this.createPullPushMessage(push.sender, push.report);
+                //    getPeer().sendMessage(push.sender.getNetworkAddress(), plps);
+                //    this.numOfPullPushes++;
+                //}
+                //else{
                     Pull pull=this.createPullMessage(push.sender, push.report);
                     getPeer().sendMessage(push.sender.getNetworkAddress(), pull);
                     this.numOfPulls++;
-                }
+                //}
+                break;
 			case PULL_PUSH:
 				PullPush pullPush = (PullPush) message;
 				logger.debug("ppidx " + getPeer().getIndexNumber() + " AggregateSum"
