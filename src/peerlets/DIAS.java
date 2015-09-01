@@ -287,16 +287,20 @@ public class DIAS extends BasePeerlet implements DIASInterface, AggregationInter
 		if (message.aggregationEpoch == this.aggregationEpoch) {
 			switch (message.type) {
 			case PUSH:
-				Push push = (Push) message;
-				logger.debug("pidx " + getPeer().getIndexNumber() + " AggregateSum "
-						+ (Double) getAggregate(AggregationFunction.SUM) + " SelectedState "
-						+ ((ArithmeticState) push.report.get(DisseminatorReport.SELECTED_STATE)).getValue());
-				// Concurrency problem, do not create PullPush messages!
-				Pull pull = this.createPullMessage(push.sender, push.report);
-				getPeer().sendMessage(push.sender.getNetworkAddress(), pull);
-				this.numOfPulls++;
-
-				break;
+				Push push=(Push)message;
+				boolean amdCheck=this.disseminator.checkAMDMembership(push.sender);
+                boolean amsCheck=this.disseminator.checkAMSMembership(this.disseminator.getSelectedState(), push.sender);
+                if(this.strategy.isPossibleAggregation(amdCheck, amsCheck)){
+                    this.strategy.removeNeighbor(push.sender);
+                    PullPush plps=this.createPullPushMessage(push.sender, push.report);
+                    getPeer().sendMessage(push.sender.getNetworkAddress(), plps);
+                    this.numOfPullPushes++;
+                }
+                else{
+                    Pull pull=this.createPullMessage(push.sender, push.report);
+                    getPeer().sendMessage(push.sender.getNetworkAddress(), pull);
+                    this.numOfPulls++;
+                }
 			case PULL_PUSH:
 				PullPush pullPush = (PullPush) message;
 				logger.debug("ppidx " + getPeer().getIndexNumber() + " AggregateSum"
