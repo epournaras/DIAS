@@ -1,0 +1,1247 @@
+[Aug 31 16:03:49] DEBUG (BootstrapServerUniform.java:123) - BootstrapServer started
+[Aug 31 16:03:49] DEBUG (BootstrapClient.java:83) - Sending BootstrapHello(src=0, srcID=0.008122303457783864) to 0
+[Aug 31 16:03:49] DEBUG (SimpleDIASApplication.java:145) - started peer dump/Experiment01//0.008122303457783864 with state: State ID:8d93c627-9588-4ba8-8787-7c9f727bdc82
+ Properties:
+  VALUE_STATE: 0.7832207704271007
+
+[Aug 31 16:03:49] DEBUG (BootstrapClient.java:83) - Sending BootstrapHello(src=1, srcID=0.05811219020599556) to 0
+[Aug 31 16:03:49] DEBUG (SimpleDIASApplication.java:145) - started peer dump/Experiment01//0.05811219020599556 with state: State ID:354a1f15-ed83-4757-9c86-e807626b6dda
+ Properties:
+  VALUE_STATE: 0.8847289250925393
+
+[Aug 31 16:03:49] DEBUG (BootstrapClient.java:83) - Sending BootstrapHello(src=2, srcID=0.03832779674918191) to 0
+[Aug 31 16:03:49] DEBUG (SimpleDIASApplication.java:145) - started peer dump/Experiment01//0.03832779674918191 with state: State ID:4a1e63fb-0562-46d9-89b9-fcb429bc1935
+ Properties:
+  VALUE_STATE: 0.8035097256575512
+
+[Aug 31 16:03:49] DEBUG (BootstrapServerUniform.java:50) - BootstrapHello received: BootstrapHello(src=0, srcID=0.008122303457783864)
+[Aug 31 16:03:49] DEBUG (BootstrapServerUniform.java:59) - waiting for core peers to join, current: 1, expecting 3 peers 
+[Aug 31 16:03:49] DEBUG (BootstrapServerUniform.java:50) - BootstrapHello received: BootstrapHello(src=1, srcID=0.05811219020599556)
+[Aug 31 16:03:49] DEBUG (BootstrapServerUniform.java:59) - waiting for core peers to join, current: 2, expecting 3 peers 
+[Aug 31 16:03:49] DEBUG (BootstrapServerUniform.java:50) - BootstrapHello received: BootstrapHello(src=2, srcID=0.03832779674918191)
+[Aug 31 16:03:49] DEBUG (BootstrapServerUniform.java:59) - waiting for core peers to join, current: 3, expecting 3 peers 
+[Aug 31 16:03:49] DEBUG (BootstrapServerUniform.java:67) - Have the required minimum of 3 peers, initializing them
+[Aug 31 16:03:49] DEBUG (BootstrapServerUniform.java:37) - nextArrivalSequenceNum: 0
+[Aug 31 16:03:49] DEBUG (BootstrapServerUniform.java:86) - initializing core peer: 0 seqnum: 0
+[Aug 31 16:03:49] DEBUG (BootstrapServerUniform.java:37) - nextArrivalSequenceNum: 1
+[Aug 31 16:03:49] DEBUG (BootstrapServerUniform.java:86) - initializing core peer: 1 seqnum: 1
+[Aug 31 16:03:49] DEBUG (BootstrapServerUniform.java:37) - nextArrivalSequenceNum: 2
+[Aug 31 16:03:49] DEBUG (BootstrapServerUniform.java:86) - initializing core peer: 2 seqnum: 2
+[Aug 31 16:03:49] DEBUG (BootstrapClient.java:61) - InitializePeerMessage received: seqnum: 0 initialNeighbors: [(2, 0.03832779674918191), (1, 0.05811219020599556)]
+[Aug 31 16:03:49] DEBUG (BootstrapClient.java:61) - InitializePeerMessage received: seqnum: 1 initialNeighbors: [(2, 0.03832779674918191), (0, 0.008122303457783864)]
+[Aug 31 16:03:49] DEBUG (BootstrapClient.java:61) - InitializePeerMessage received: seqnum: 2 initialNeighbors: [(1, 0.05811219020599556), (0, 0.008122303457783864)]
+[Aug 31 16:03:49] DEBUG (BootstrapServerUniform.java:105) - InitializationAck received: protopeer.servers.bootstrap.InitializationAck(src=0)
+[Aug 31 16:03:49] DEBUG (SimpleConnector.java:59) - received: ConnectionRequest(0,0.008122303457783864)
+[Aug 31 16:03:49] DEBUG (SimpleConnector.java:72) - adding neighbor: (0, 0.008122303457783864)
+[Aug 31 16:03:49] DEBUG (NeighborManager.java:82) - Adding neighbor: (0, 0.008122303457783864)
+[Aug 31 16:03:49] DEBUG (SimpleConnector.java:59) - received: ConnectionRequest(0,0.008122303457783864)
+[Aug 31 16:03:49] DEBUG (SimpleConnector.java:72) - adding neighbor: (0, 0.008122303457783864)
+[Aug 31 16:03:49] DEBUG (NeighborManager.java:82) - Adding neighbor: (0, 0.008122303457783864)
+[Aug 31 16:03:49] DEBUG (BootstrapServerUniform.java:105) - InitializationAck received: protopeer.servers.bootstrap.InitializationAck(src=1)
+[Aug 31 16:03:49] DEBUG (SimpleConnector.java:59) - received: ConnectionRequest(1,0.05811219020599556)
+[Aug 31 16:03:49] DEBUG (SimpleConnector.java:72) - adding neighbor: (1, 0.05811219020599556)
+[Aug 31 16:03:49] DEBUG (NeighborManager.java:82) - Adding neighbor: (1, 0.05811219020599556)
+[Aug 31 16:03:49] DEBUG (SimpleConnector.java:59) - received: ConnectionRequest(1,0.05811219020599556)
+[Aug 31 16:03:49] DEBUG (SimpleConnector.java:72) - adding neighbor: (1, 0.05811219020599556)
+[Aug 31 16:03:49] DEBUG (NeighborManager.java:82) - Adding neighbor: (1, 0.05811219020599556)
+[Aug 31 16:03:49] DEBUG (BootstrapServerUniform.java:105) - InitializationAck received: protopeer.servers.bootstrap.InitializationAck(src=2)
+[Aug 31 16:03:49] DEBUG (SimpleConnector.java:59) - received: ConnectionRequest(2,0.03832779674918191)
+[Aug 31 16:03:49] DEBUG (SimpleConnector.java:72) - adding neighbor: (2, 0.03832779674918191)
+[Aug 31 16:03:49] DEBUG (NeighborManager.java:82) - Adding neighbor: (2, 0.03832779674918191)
+[Aug 31 16:03:49] DEBUG (SimpleConnector.java:59) - received: ConnectionRequest(2,0.03832779674918191)
+[Aug 31 16:03:49] DEBUG (SimpleConnector.java:72) - adding neighbor: (2, 0.03832779674918191)
+[Aug 31 16:03:49] DEBUG (NeighborManager.java:82) - Adding neighbor: (2, 0.03832779674918191)
+[Aug 31 16:03:49] DEBUG (SimpleConnector.java:85) - received: ConnectionResponse(2, 0.03832779674918191)
+[Aug 31 16:03:49] DEBUG (SimpleConnector.java:98) - adding neighbor: (2, 0.03832779674918191)
+[Aug 31 16:03:49] DEBUG (NeighborManager.java:82) - Adding neighbor: (2, 0.03832779674918191)
+[Aug 31 16:03:49] DEBUG (NeighborManager.java:62) - Neighbor exists already: (2, 0.03832779674918191)
+[Aug 31 16:03:49] DEBUG (SimpleConnector.java:85) - received: ConnectionResponse(1, 0.05811219020599556)
+[Aug 31 16:03:49] DEBUG (SimpleConnector.java:98) - adding neighbor: (1, 0.05811219020599556)
+[Aug 31 16:03:49] DEBUG (NeighborManager.java:82) - Adding neighbor: (1, 0.05811219020599556)
+[Aug 31 16:03:49] DEBUG (NeighborManager.java:62) - Neighbor exists already: (1, 0.05811219020599556)
+[Aug 31 16:03:49] DEBUG (SimpleConnector.java:85) - received: ConnectionResponse(2, 0.03832779674918191)
+[Aug 31 16:03:49] DEBUG (SimpleConnector.java:98) - adding neighbor: (2, 0.03832779674918191)
+[Aug 31 16:03:49] DEBUG (NeighborManager.java:82) - Adding neighbor: (2, 0.03832779674918191)
+[Aug 31 16:03:49] DEBUG (NeighborManager.java:62) - Neighbor exists already: (2, 0.03832779674918191)
+[Aug 31 16:03:49] DEBUG (SimpleConnector.java:85) - received: ConnectionResponse(0, 0.008122303457783864)
+[Aug 31 16:03:49] DEBUG (SimpleConnector.java:98) - adding neighbor: (0, 0.008122303457783864)
+[Aug 31 16:03:49] DEBUG (NeighborManager.java:82) - Adding neighbor: (0, 0.008122303457783864)
+[Aug 31 16:03:49] DEBUG (NeighborManager.java:62) - Neighbor exists already: (0, 0.008122303457783864)
+[Aug 31 16:03:49] DEBUG (SimpleConnector.java:85) - received: ConnectionResponse(1, 0.05811219020599556)
+[Aug 31 16:03:49] DEBUG (SimpleConnector.java:98) - adding neighbor: (1, 0.05811219020599556)
+[Aug 31 16:03:49] DEBUG (NeighborManager.java:82) - Adding neighbor: (1, 0.05811219020599556)
+[Aug 31 16:03:49] DEBUG (NeighborManager.java:62) - Neighbor exists already: (1, 0.05811219020599556)
+[Aug 31 16:03:49] DEBUG (SimpleConnector.java:85) - received: ConnectionResponse(0, 0.008122303457783864)
+[Aug 31 16:03:49] DEBUG (SimpleConnector.java:98) - adding neighbor: (0, 0.008122303457783864)
+[Aug 31 16:03:49] DEBUG (NeighborManager.java:82) - Adding neighbor: (0, 0.008122303457783864)
+[Aug 31 16:03:49] DEBUG (NeighborManager.java:62) - Neighbor exists already: (0, 0.008122303457783864)
+[Aug 31 16:03:49] WARN  (DIAS.java:501) - Epoch 0
+[Aug 31 16:03:49] WARN  (DIAS.java:501) - Epoch 1
+[Aug 31 16:03:49] WARN  (DIAS.java:501) - Epoch 2
+[Aug 31 16:03:49] WARN  (DIAS.java:501) - Epoch 3
+[Aug 31 16:03:49] WARN  (DIAS.java:501) - Epoch 4
+[Aug 31 16:03:49] WARN  (DIAS.java:501) - Epoch 5
+[Aug 31 16:03:49] WARN  (DIAS.java:501) - Epoch 6
+[Aug 31 16:03:49] WARN  (DIAS.java:501) - Epoch 7
+[Aug 31 16:03:49] WARN  (DIAS.java:501) - Epoch 8
+[Aug 31 16:03:49] WARN  (DIAS.java:501) - Epoch 9
+[Aug 31 16:03:49] WARN  (DIAS.java:501) - Epoch 10
+[Aug 31 16:03:49] WARN  (DIAS.java:501) - Epoch 11
+[Aug 31 16:03:49] WARN  (DIAS.java:501) - Epoch 12
+[Aug 31 16:03:49] WARN  (DIAS.java:501) - Epoch 13
+[Aug 31 16:03:50] WARN  (DIAS.java:501) - Epoch 14
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 0.8847289250925393 avg: 0.8847289250925393 count: 1.0
+[Aug 31 16:03:50] DEBUG (DIAS.java:291) - pidx 0 AggregateSum 0.7832207704271007 SelectedState 0.8847289250925393
+[Aug 31 16:03:50] WARN  (DIAS.java:501) - Epoch 15
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 1.66794969551964 avg: 0.83397484775982 count: 2.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 0.8847289250925393 avg: 0.8847289250925393 count: 1.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 0.8035097256575512 avg: 0.8035097256575512 count: 1.0
+[Aug 31 16:03:50] DEBUG (DIAS.java:291) - pidx 0 AggregateSum 1.66794969551964 SelectedState 0.8035097256575512
+[Aug 31 16:03:50] DEBUG (DIAS.java:291) - pidx 1 AggregateSum 0.8847289250925393 SelectedState 0.8035097256575512
+[Aug 31 16:03:50] DEBUG (DIAS.java:291) - pidx 1 AggregateSum 1.6882386507500904 SelectedState 0.7832207704271007
+[Aug 31 16:03:50] DEBUG (DIAS.java:291) - pidx 2 AggregateSum 0.8035097256575512 SelectedState 0.7832207704271007
+[Aug 31 16:03:50] DEBUG (DIAS.java:291) - pidx 2 AggregateSum 1.5867304960846518 SelectedState 0.8847289250925393
+[Aug 31 16:03:50] WARN  (DIAS.java:501) - Epoch 16
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] WARN  (DIAS.java:501) - Epoch 17
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] WARN  (DIAS.java:501) - Epoch 18
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] WARN  (DIAS.java:501) - Epoch 19
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] WARN  (DIAS.java:501) - Epoch 20
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] WARN  (DIAS.java:501) - Epoch 21
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] WARN  (DIAS.java:501) - Epoch 22
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] WARN  (DIAS.java:501) - Epoch 23
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] WARN  (DIAS.java:501) - Epoch 24
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] WARN  (DIAS.java:501) - Epoch 25
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] WARN  (DIAS.java:501) - Epoch 26
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] WARN  (DIAS.java:501) - Epoch 27
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] WARN  (DIAS.java:501) - Epoch 28
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] WARN  (DIAS.java:501) - Epoch 29
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] WARN  (DIAS.java:501) - Epoch 30
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] WARN  (DIAS.java:501) - Epoch 31
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] WARN  (DIAS.java:501) - Epoch 32
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] WARN  (DIAS.java:501) - Epoch 33
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] WARN  (DIAS.java:501) - Epoch 34
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] WARN  (DIAS.java:501) - Epoch 35
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] WARN  (DIAS.java:501) - Epoch 36
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] WARN  (DIAS.java:501) - Epoch 37
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] WARN  (DIAS.java:501) - Epoch 38
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] WARN  (DIAS.java:501) - Epoch 39
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] WARN  (DIAS.java:501) - Epoch 40
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] WARN  (DIAS.java:501) - Epoch 41
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] WARN  (DIAS.java:501) - Epoch 42
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] WARN  (DIAS.java:501) - Epoch 43
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] WARN  (DIAS.java:501) - Epoch 44
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] WARN  (DIAS.java:501) - Epoch 45
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] WARN  (DIAS.java:501) - Epoch 46
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] WARN  (DIAS.java:501) - Epoch 47
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] WARN  (DIAS.java:501) - Epoch 48
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] WARN  (DIAS.java:501) - Epoch 49
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] WARN  (DIAS.java:501) - Epoch 50
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] WARN  (DIAS.java:501) - Epoch 51
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] WARN  (DIAS.java:501) - Epoch 52
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] WARN  (DIAS.java:501) - Epoch 53
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] WARN  (DIAS.java:501) - Epoch 54
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] WARN  (DIAS.java:501) - Epoch 55
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] WARN  (DIAS.java:501) - Epoch 56
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] WARN  (DIAS.java:501) - Epoch 57
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] WARN  (DIAS.java:501) - Epoch 58
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] WARN  (DIAS.java:501) - Epoch 59
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] WARN  (DIAS.java:501) - Epoch 60
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] WARN  (DIAS.java:501) - Epoch 61
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] WARN  (DIAS.java:501) - Epoch 62
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] WARN  (DIAS.java:501) - Epoch 63
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] WARN  (DIAS.java:501) - Epoch 64
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] WARN  (DIAS.java:501) - Epoch 65
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] WARN  (DIAS.java:501) - Epoch 66
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] WARN  (DIAS.java:501) - Epoch 67
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] WARN  (DIAS.java:501) - Epoch 68
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] WARN  (DIAS.java:501) - Epoch 69
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] WARN  (DIAS.java:501) - Epoch 70
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] WARN  (DIAS.java:501) - Epoch 71
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] WARN  (DIAS.java:501) - Epoch 72
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] WARN  (DIAS.java:501) - Epoch 73
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] WARN  (DIAS.java:501) - Epoch 74
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] WARN  (DIAS.java:501) - Epoch 75
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] WARN  (DIAS.java:501) - Epoch 76
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] WARN  (DIAS.java:501) - Epoch 77
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] WARN  (DIAS.java:501) - Epoch 78
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] WARN  (DIAS.java:501) - Epoch 79
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] WARN  (DIAS.java:501) - Epoch 80
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] WARN  (DIAS.java:501) - Epoch 81
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] WARN  (DIAS.java:501) - Epoch 82
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] WARN  (DIAS.java:501) - Epoch 83
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] WARN  (DIAS.java:501) - Epoch 84
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] WARN  (DIAS.java:501) - Epoch 85
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] WARN  (DIAS.java:501) - Epoch 86
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] WARN  (DIAS.java:501) - Epoch 87
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] WARN  (DIAS.java:501) - Epoch 88
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] WARN  (DIAS.java:501) - Epoch 89
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] WARN  (DIAS.java:501) - Epoch 90
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] WARN  (DIAS.java:501) - Epoch 91
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] WARN  (DIAS.java:501) - Epoch 92
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] WARN  (DIAS.java:501) - Epoch 93
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] WARN  (DIAS.java:501) - Epoch 94
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] WARN  (DIAS.java:501) - Epoch 95
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] WARN  (DIAS.java:501) - Epoch 96
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] WARN  (DIAS.java:501) - Epoch 97
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] WARN  (DIAS.java:501) - Epoch 98
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 2.471459421177191 avg: 0.8238198070590638 count: 3.0
+[Aug 31 16:03:50] WARN  (DIAS.java:501) - Epoch 99
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 1.8533992281185014 avg: 0.6177997427061671 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 1.7330349372280907 avg: 0.5776783124093635 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 1.8132863860031372 avg: 0.6044287953343791 count: 3.0
+[Aug 31 16:03:50] DEBUG (DIAS.java:291) - pidx 0 AggregateSum 1.8533992281185014 SelectedState 0.14533669048349712
+[Aug 31 16:03:50] DEBUG (DIAS.java:291) - pidx 1 AggregateSum 1.7330349372280907 SelectedState 0.14533669048349712
+[Aug 31 16:03:50] DEBUG (DIAS.java:291) - pidx 0 AggregateSum 1.1952261929444474 SelectedState 0.14630444114343888
+[Aug 31 16:03:50] DEBUG (DIAS.java:291) - pidx 2 AggregateSum 1.8132863860031372 SelectedState 0.14630444114343888
+[Aug 31 16:03:50] DEBUG (DIAS.java:291) - pidx 1 AggregateSum 1.0748619020540366 SelectedState 0.1651605773684111
+[Aug 31 16:03:50] DEBUG (DIAS.java:291) - pidx 2 AggregateSum 1.0748619020540366 SelectedState 0.1651605773684111
+[Aug 31 16:03:50] WARN  (DIAS.java:501) - Epoch 100
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 0.456801708995347 avg: 0.15226723633178232 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:50] WARN  (DIAS.java:501) - Epoch 101
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 0.456801708995347 avg: 0.15226723633178232 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:50] WARN  (DIAS.java:501) - Epoch 102
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 0.456801708995347 avg: 0.15226723633178232 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:50] WARN  (DIAS.java:501) - Epoch 103
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 0.456801708995347 avg: 0.15226723633178232 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:50] WARN  (DIAS.java:501) - Epoch 104
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 0.456801708995347 avg: 0.15226723633178232 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:50] WARN  (DIAS.java:501) - Epoch 105
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 0.456801708995347 avg: 0.15226723633178232 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:50] WARN  (DIAS.java:501) - Epoch 106
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 0.456801708995347 avg: 0.15226723633178232 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:50] WARN  (DIAS.java:501) - Epoch 107
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 0.456801708995347 avg: 0.15226723633178232 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:50] WARN  (DIAS.java:501) - Epoch 108
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 0.456801708995347 avg: 0.15226723633178232 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:50] WARN  (DIAS.java:501) - Epoch 109
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 0.456801708995347 avg: 0.15226723633178232 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:50] WARN  (DIAS.java:501) - Epoch 110
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 0.456801708995347 avg: 0.15226723633178232 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:50] WARN  (DIAS.java:501) - Epoch 111
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 0.456801708995347 avg: 0.15226723633178232 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:50] WARN  (DIAS.java:501) - Epoch 112
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 0.456801708995347 avg: 0.15226723633178232 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:50] WARN  (DIAS.java:501) - Epoch 113
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 0.456801708995347 avg: 0.15226723633178232 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:50] WARN  (DIAS.java:501) - Epoch 114
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 0.456801708995347 avg: 0.15226723633178232 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:50] WARN  (DIAS.java:501) - Epoch 115
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 0.456801708995347 avg: 0.15226723633178232 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:50] WARN  (DIAS.java:501) - Epoch 116
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 0.456801708995347 avg: 0.15226723633178232 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:50] WARN  (DIAS.java:501) - Epoch 117
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 0.456801708995347 avg: 0.15226723633178232 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:50] WARN  (DIAS.java:501) - Epoch 118
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 0.456801708995347 avg: 0.15226723633178232 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:50] WARN  (DIAS.java:501) - Epoch 119
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 0.456801708995347 avg: 0.15226723633178232 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:50] WARN  (DIAS.java:501) - Epoch 120
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 0.456801708995347 avg: 0.15226723633178232 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:50] WARN  (DIAS.java:501) - Epoch 121
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 0.456801708995347 avg: 0.15226723633178232 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:50] WARN  (DIAS.java:501) - Epoch 122
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 0.456801708995347 avg: 0.15226723633178232 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:50] WARN  (DIAS.java:501) - Epoch 123
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 0.456801708995347 avg: 0.15226723633178232 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:50] WARN  (DIAS.java:501) - Epoch 124
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 0.456801708995347 avg: 0.15226723633178232 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:50] WARN  (DIAS.java:501) - Epoch 125
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 0.456801708995347 avg: 0.15226723633178232 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:50] WARN  (DIAS.java:501) - Epoch 126
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 0.456801708995347 avg: 0.15226723633178232 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:50] WARN  (DIAS.java:501) - Epoch 127
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 0.456801708995347 avg: 0.15226723633178232 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:50] WARN  (DIAS.java:501) - Epoch 128
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 0.456801708995347 avg: 0.15226723633178232 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:50] WARN  (DIAS.java:501) - Epoch 129
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 0.456801708995347 avg: 0.15226723633178232 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:50] WARN  (DIAS.java:501) - Epoch 130
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 0.456801708995347 avg: 0.15226723633178232 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:50] WARN  (DIAS.java:501) - Epoch 131
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 0.456801708995347 avg: 0.15226723633178232 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:50] WARN  (DIAS.java:501) - Epoch 132
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 0.456801708995347 avg: 0.15226723633178232 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:50] WARN  (DIAS.java:501) - Epoch 133
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 0.456801708995347 avg: 0.15226723633178232 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:50] WARN  (DIAS.java:501) - Epoch 134
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 0.456801708995347 avg: 0.15226723633178232 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:50] WARN  (DIAS.java:501) - Epoch 135
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 0.456801708995347 avg: 0.15226723633178232 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:50] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:50] WARN  (DIAS.java:501) - Epoch 136
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 0.456801708995347 avg: 0.15226723633178232 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 137
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 0.456801708995347 avg: 0.15226723633178232 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 138
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 0.456801708995347 avg: 0.15226723633178232 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 139
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 0.456801708995347 avg: 0.15226723633178232 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 140
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 0.456801708995347 avg: 0.15226723633178232 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 141
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 0.456801708995347 avg: 0.15226723633178232 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 142
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 0.456801708995347 avg: 0.15226723633178232 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 143
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 0.456801708995347 avg: 0.15226723633178232 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 144
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 0.456801708995347 avg: 0.15226723633178232 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 145
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 0.456801708995347 avg: 0.15226723633178232 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 146
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 0.456801708995347 avg: 0.15226723633178232 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 147
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 0.456801708995347 avg: 0.15226723633178232 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 148
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 0.456801708995347 avg: 0.15226723633178232 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 149
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 0.456801708995347 avg: 0.15226723633178232 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 150
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 0.456801708995347 avg: 0.15226723633178232 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 151
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 0.456801708995347 avg: 0.15226723633178232 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 152
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 0.456801708995347 avg: 0.15226723633178232 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 153
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 0.456801708995347 avg: 0.15226723633178232 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 154
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 0.456801708995347 avg: 0.15226723633178232 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 155
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 0.456801708995347 avg: 0.15226723633178232 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 156
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 0.456801708995347 avg: 0.15226723633178232 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 157
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 0.456801708995347 avg: 0.15226723633178232 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 158
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 0.456801708995347 avg: 0.15226723633178232 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 159
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 0.456801708995347 avg: 0.15226723633178232 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 160
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 0.456801708995347 avg: 0.15226723633178232 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 161
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 0.456801708995347 avg: 0.15226723633178232 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 162
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 0.456801708995347 avg: 0.15226723633178232 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 163
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 0.456801708995347 avg: 0.15226723633178232 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 164
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 0.456801708995347 avg: 0.15226723633178232 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 165
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 0.456801708995347 avg: 0.15226723633178232 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 166
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 0.456801708995347 avg: 0.15226723633178232 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 167
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 0.456801708995347 avg: 0.15226723633178232 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 168
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 0.456801708995347 avg: 0.15226723633178232 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 169
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 0.456801708995347 avg: 0.15226723633178232 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 170
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 0.456801708995347 avg: 0.15226723633178232 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 171
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 0.456801708995347 avg: 0.15226723633178232 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 172
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 0.456801708995347 avg: 0.15226723633178232 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 173
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 0.456801708995347 avg: 0.15226723633178232 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 174
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 0.456801708995347 avg: 0.15226723633178232 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 175
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 0.456801708995347 avg: 0.15226723633178232 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 176
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 0.456801708995347 avg: 0.15226723633178232 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 177
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 0.456801708995347 avg: 0.15226723633178232 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 178
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 0.456801708995347 avg: 0.15226723633178232 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 179
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 0.456801708995347 avg: 0.15226723633178232 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 180
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 0.456801708995347 avg: 0.15226723633178232 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 181
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 0.456801708995347 avg: 0.15226723633178232 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 182
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 0.456801708995347 avg: 0.15226723633178232 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 183
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 0.456801708995347 avg: 0.15226723633178232 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 184
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 0.456801708995347 avg: 0.15226723633178232 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 185
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 0.456801708995347 avg: 0.15226723633178232 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 186
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 0.456801708995347 avg: 0.15226723633178232 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 187
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 0.456801708995347 avg: 0.15226723633178232 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 188
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 0.456801708995347 avg: 0.15226723633178232 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 189
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 0.456801708995347 avg: 0.15226723633178232 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 190
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 0.456801708995347 avg: 0.15226723633178232 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 191
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 0.456801708995347 avg: 0.15226723633178232 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 192
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 0.456801708995347 avg: 0.15226723633178232 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 193
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 0.456801708995347 avg: 0.15226723633178232 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 194
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 0.456801708995347 avg: 0.15226723633178232 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 195
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 0.456801708995347 avg: 0.15226723633178232 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 196
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 0.456801708995347 avg: 0.15226723633178232 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 197
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 0.456801708995347 avg: 0.15226723633178232 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 198
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 0.456801708995347 avg: 0.15226723633178232 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 0.45680170899534706 avg: 0.15226723633178235 count: 3.0
+[Aug 31 16:03:51] DEBUG (DIAS.java:291) - pidx 0 AggregateSum 0.8918341843762343 SelectedState 0.7080091262102747
+[Aug 31 16:03:51] DEBUG (DIAS.java:291) - pidx 1 AggregateSum 0.9301113787796651 SelectedState 0.7080091262102747
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 199
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 1.454506620103012 avg: 0.4848355400343373 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 1.4927838145064425 avg: 0.49759460483548085 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 1.0194741447221247 avg: 0.3398247149073749 count: 3.0
+[Aug 31 16:03:51] DEBUG (DIAS.java:291) - pidx 1 AggregateSum 1.4927838145064425 SelectedState 0.6001930527492984
+[Aug 31 16:03:51] DEBUG (DIAS.java:291) - pidx 2 AggregateSum 1.0194741447221247 SelectedState 0.6001930527492984
+[Aug 31 16:03:51] DEBUG (DIAS.java:291) - pidx 0 AggregateSum 1.454506620103012 SelectedState 0.619614110927757
+[Aug 31 16:03:51] DEBUG (DIAS.java:291) - pidx 2 AggregateSum 1.454506620103012 SelectedState 0.619614110927757
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 200
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 1.9278162898873297 avg: 0.6426054299624432 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 201
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 1.9278162898873297 avg: 0.6426054299624432 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 202
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 1.9278162898873297 avg: 0.6426054299624432 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 203
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 1.9278162898873297 avg: 0.6426054299624432 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 204
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 1.9278162898873297 avg: 0.6426054299624432 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 205
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 1.9278162898873297 avg: 0.6426054299624432 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 206
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 1.9278162898873297 avg: 0.6426054299624432 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 207
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 1.9278162898873297 avg: 0.6426054299624432 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 208
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 1.9278162898873297 avg: 0.6426054299624432 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 209
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 1.9278162898873297 avg: 0.6426054299624432 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 210
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 1.9278162898873297 avg: 0.6426054299624432 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 211
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 1.9278162898873297 avg: 0.6426054299624432 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 212
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 1.9278162898873297 avg: 0.6426054299624432 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 213
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 1.9278162898873297 avg: 0.6426054299624432 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 214
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 1.9278162898873297 avg: 0.6426054299624432 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 215
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 1.9278162898873297 avg: 0.6426054299624432 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 216
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 1.9278162898873297 avg: 0.6426054299624432 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 217
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 1.9278162898873297 avg: 0.6426054299624432 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 218
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 1.9278162898873297 avg: 0.6426054299624432 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 219
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 1.9278162898873297 avg: 0.6426054299624432 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 220
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 1.9278162898873297 avg: 0.6426054299624432 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 221
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 1.9278162898873297 avg: 0.6426054299624432 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 222
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 1.9278162898873297 avg: 0.6426054299624432 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 223
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 1.9278162898873297 avg: 0.6426054299624432 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 224
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 1.9278162898873297 avg: 0.6426054299624432 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 225
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 1.9278162898873297 avg: 0.6426054299624432 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 226
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 1.9278162898873297 avg: 0.6426054299624432 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 227
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 1.9278162898873297 avg: 0.6426054299624432 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 228
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 1.9278162898873297 avg: 0.6426054299624432 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 229
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 1.9278162898873297 avg: 0.6426054299624432 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 230
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 1.9278162898873297 avg: 0.6426054299624432 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 231
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 1.9278162898873297 avg: 0.6426054299624432 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 232
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 1.9278162898873297 avg: 0.6426054299624432 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 233
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 1.9278162898873297 avg: 0.6426054299624432 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 234
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 1.9278162898873297 avg: 0.6426054299624432 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 235
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 1.9278162898873297 avg: 0.6426054299624432 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 236
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 1.9278162898873297 avg: 0.6426054299624432 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 237
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 1.9278162898873297 avg: 0.6426054299624432 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 238
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 1.9278162898873297 avg: 0.6426054299624432 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 239
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 1.9278162898873297 avg: 0.6426054299624432 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 240
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 1.9278162898873297 avg: 0.6426054299624432 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 241
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 1.9278162898873297 avg: 0.6426054299624432 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 242
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 1.9278162898873297 avg: 0.6426054299624432 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 243
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 1.9278162898873297 avg: 0.6426054299624432 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 244
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 1.9278162898873297 avg: 0.6426054299624432 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 245
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 1.9278162898873297 avg: 0.6426054299624432 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 246
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 1.9278162898873297 avg: 0.6426054299624432 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 247
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 1.9278162898873297 avg: 0.6426054299624432 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 248
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 1.9278162898873297 avg: 0.6426054299624432 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 249
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 1.9278162898873297 avg: 0.6426054299624432 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 250
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 1.9278162898873297 avg: 0.6426054299624432 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 251
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 1.9278162898873297 avg: 0.6426054299624432 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 252
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 1.9278162898873297 avg: 0.6426054299624432 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 253
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 1.9278162898873297 avg: 0.6426054299624432 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 254
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 1.9278162898873297 avg: 0.6426054299624432 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 255
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 1.9278162898873297 avg: 0.6426054299624432 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 256
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 1.9278162898873297 avg: 0.6426054299624432 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 257
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 1.9278162898873297 avg: 0.6426054299624432 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 258
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 1.9278162898873297 avg: 0.6426054299624432 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 259
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 1.9278162898873297 avg: 0.6426054299624432 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 260
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 1.9278162898873297 avg: 0.6426054299624432 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 261
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 1.9278162898873297 avg: 0.6426054299624432 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 262
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 1.9278162898873297 avg: 0.6426054299624432 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 263
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 1.9278162898873297 avg: 0.6426054299624432 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 264
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 1.9278162898873297 avg: 0.6426054299624432 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 265
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 1.9278162898873297 avg: 0.6426054299624432 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 266
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 1.9278162898873297 avg: 0.6426054299624432 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 267
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 1.9278162898873297 avg: 0.6426054299624432 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 268
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 1.9278162898873297 avg: 0.6426054299624432 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 269
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 1.9278162898873297 avg: 0.6426054299624432 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 270
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 1.9278162898873297 avg: 0.6426054299624432 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 271
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 1.9278162898873297 avg: 0.6426054299624432 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 272
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 1.9278162898873297 avg: 0.6426054299624432 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 273
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 1.9278162898873297 avg: 0.6426054299624432 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 274
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 1.9278162898873297 avg: 0.6426054299624432 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 275
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 1.9278162898873297 avg: 0.6426054299624432 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 276
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 1.9278162898873297 avg: 0.6426054299624432 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 277
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 1.9278162898873297 avg: 0.6426054299624432 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 278
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 1.9278162898873297 avg: 0.6426054299624432 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 279
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 1.9278162898873297 avg: 0.6426054299624432 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 280
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 1.9278162898873297 avg: 0.6426054299624432 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 281
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 1.9278162898873297 avg: 0.6426054299624432 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 282
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 1.9278162898873297 avg: 0.6426054299624432 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 283
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 1.9278162898873297 avg: 0.6426054299624432 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 284
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 1.9278162898873297 avg: 0.6426054299624432 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 285
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 1.9278162898873297 avg: 0.6426054299624432 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 286
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 1.9278162898873297 avg: 0.6426054299624432 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 287
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 1.9278162898873297 avg: 0.6426054299624432 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 288
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 1.9278162898873297 avg: 0.6426054299624432 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 289
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 1.9278162898873297 avg: 0.6426054299624432 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 290
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 1.9278162898873297 avg: 0.6426054299624432 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 291
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 1.9278162898873297 avg: 0.6426054299624432 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 292
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 1.9278162898873297 avg: 0.6426054299624432 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 293
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 1.9278162898873297 avg: 0.6426054299624432 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 294
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 1.9278162898873297 avg: 0.6426054299624432 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 295
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 1.9278162898873297 avg: 0.6426054299624432 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 296
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 1.9278162898873297 avg: 0.6426054299624432 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 297
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 1.9278162898873297 avg: 0.6426054299624432 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] WARN  (DIAS.java:501) - Epoch 298
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx0 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx1 sum: 1.9278162898873297 avg: 0.6426054299624432 count: 3.0
+[Aug 31 16:03:51] DEBUG (SimpleDIASApplication.java:257) -  nodeidx2 sum: 1.9278162898873301 avg: 0.6426054299624434 count: 3.0

@@ -23,8 +23,11 @@ import dsutil.generic.state.ArithmeticListState;
 import dsutil.generic.state.ArithmeticState;
 import dsutil.generic.state.State;
 import dsutil.generic.state.StateException;
+
 import java.util.ArrayList;
 import java.util.List;
+
+import org.apache.log4j.Logger;
 
 /**
  * Aggregation state keep information about the aggregation of two types of
